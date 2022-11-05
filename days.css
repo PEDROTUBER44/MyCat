@@ -1,0 +1,64 @@
+div#content div.container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+}
+
+div#content div.container div#box {
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    border-radius: 10px;
+}
+
+div#content div.container div#box div#date {
+    width: 100%;
+    height: 37px;
+    text-align: center;
+}
+
+div#content div.container div#box div#contentofbox {
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+div#content div.container div#box div#contentofbox div#perspectivesofhistory {
+    width: 100%;
+    height: calc(100% - 37px);
+    display: flex;
+    flex-direction: row;
+}
+
+div#content div.container div#box div#contentofbox div#perspectivesofhistory div.perspectiveofthisstory {
+    width: 100%;
+}
+
+div#content div.container div#box div#contentofbox div#perspectivesofhistory div.perspectiveofthisstory div#name {
+    width: 100%;
+    text-align: center;
+}
+
+div#content div.container div#box div#contentofbox div#perspectivesofhistory div.perspectiveofthisstory div#text {
+    width: 100%;
+    height: calc(100% - 29px);
+    overflow-y: scroll;
+    padding: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 750px) {
+    div#content div.container {
+        height: auto;
+    }
+
+    div#content div.container div#box div#contentofbox div#perspectivesofhistory {
+        flex-direction: column;
+    }
+
+    div#content div.container div#box div#contentofbox div#perspectivesofhistory div.perspectiveofthisstory div#name {
+        padding-top: 20px;
+    }
+}

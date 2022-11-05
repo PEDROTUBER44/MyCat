@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(27, 17, 40, 0.75);
+    backdrop-filter: blur(16px) saturate(180%); -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div#logo {
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+header nav div#logo:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+header nav div#logo div#img {
+    width: 46px;
+    height: 100%;
+}
+
+header nav div#logo div#img img {
+    width: 100%;
+    height: 100%;
+}
+
+header nav div#logo div#text {
+    margin-left: 5px;
+}
+
+header nav div#logo div#text h2 {
+    color: #ffffff;
+}
+
+div#content {
+    padding-top: 50px;
+}

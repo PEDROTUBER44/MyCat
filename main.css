@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Pacifico-Regular";
+    src: local('Pacifico-Regular'), url('Pacifico-Regular.ttf') format("truetype");
+}
+
+/* Espessura do scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+body {
+    background-color: #161616;
+    overflow-x: hidden;
+}

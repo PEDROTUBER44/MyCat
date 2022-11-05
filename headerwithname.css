@@ -1,0 +1,55 @@
+div#content div#headerwithname {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("lua-e-as-estrelas.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#content div#headerwithname div#text {
+    text-align: center;
+}
+
+div#content div#headerwithname div#text h1 {
+    font-family: "Pacifico-Regular";
+}
+
+div#content div#headerwithname div#text h4 {
+    font-family: "Pacifico-Regular";
+}
+
+div#content div#headerwithname div#text h4#typing-animation {
+    animation: blinkCursor 500ms infinite normal,
+    typing 4s steps(40) 1s normal both;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24.2em;
+    }
+}
+
+@keyframes blinkCursor{
+    from {
+        border-right-color: rgba(255,255,255, 0.75);
+    } to {
+        border-right-color: transparent;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    div#content div#headerwithname div#text h4#typing-animation {
+        font-size: 12px;
+    }
+}
